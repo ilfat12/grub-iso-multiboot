@@ -50,15 +50,6 @@ grub can't parse its isolinux.cfg.
 + ubuntu-16.04.2-desktop-amd64.iso
 + void-live-x86_64-musl-20170220.iso
 + debian-8.7.1-amd64-xfce-CD-1.iso
-+ antergos-18.12-x86_64.iso
-+ manjaro-xfce-18.0-stable-x86_64.iso
-+ Solus-3.9999-Budgie.iso
-+ antiX-17.3.1_x64-full.iso (only from usb media)
-+ MX-18_x64.iso (only from usb media)
-+ ubuntu-18.10-desktop-amd64.iso
-+ MagOS_2016.64_20181222.iso
-+ ROSA.FRESH.KDE.R11.x86_64.uefi.iso
-+ 
 ```
 Requires grub edit in its entry.
 change syslinux.cfg to one of:
@@ -68,6 +59,14 @@ change syslinux.cfg to one of:
 The `include` from grub interpretation of syslinux has a different behavior than
 the original.
 ```
++ antergos-18.12-x86_64.iso
++ manjaro-xfce-18.0-stable-x86_64.iso
++ Solus-3.9999-Budgie.iso
++ antiX-17.3.1_x64-full.iso (only from usb media)
++ MX-18_x64.iso (only from usb media)
++ ubuntu-18.10-desktop-amd64.iso
++ MagOS_2016.64_20181222.iso
++ ROSA.FRESH.KDE.R11.x86_64.uefi.iso
 
 NonWorking (come back to it later)
 ----------------------------------
