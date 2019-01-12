@@ -59,7 +59,7 @@ change syslinux.cfg to one of:
 The `include` from grub interpretation of syslinux has a different behavior than
 the original.
 ```
-+ antergos-18.12-x86_64.iso
++ antergos-18.12-x86_64.iso (custom config)
 + manjaro-xfce-18.0-stable-x86_64.iso
 + Solus-3.9999-Budgie.iso
 + antiX-17.3.1_x64-full.iso (only from usb media)
