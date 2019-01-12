@@ -50,6 +50,15 @@ grub can't parse its isolinux.cfg.
 + ubuntu-16.04.2-desktop-amd64.iso
 + void-live-x86_64-musl-20170220.iso
 + debian-8.7.1-amd64-xfce-CD-1.iso
++ antergos-18.12-x86_64.iso
++ manjaro-xfce-18.0-stable-x86_64.iso
++ Solus-3.9999-Budgie.iso
++ antiX-17.3.1_x64-full.iso (only from usb media)
++ MX-18_x64.iso (only from usb media)
++ ubuntu-18.10-desktop-amd64.iso
++ MagOS_2016.64_20181222.iso
++ ROSA.FRESH.KDE.R11.x86_64.uefi.iso
++ 
 ```
 Requires grub edit in its entry.
 change syslinux.cfg to one of:
@@ -88,6 +97,11 @@ seems to hang after splash
 # You can still manually mount /Mount/CD-ROM if your iso is in a compatible disk
 # but fat/vfat is not one of them. (so 1/2 working)
 ```
++ Mageia-6.1-LiveDVD-GNOME-x86_64-DVD.iso
+```
+Boots the kernel but fails to find the root inside the iso from kernel command line.
+```
+
 
 How
 ---
