@@ -1,0 +1,38 @@
+# Two variables for filtering images. One of them must be set. Better both. "uniqpath" in priority.
+# Path to a unique file or directory in the ISO image. You can use the asterisk character.
+uniqpath="/sysrcd.dat"
+# Pattern for iso image name in the POSIX ERE syntax.
+isopattern="/systemrescuecd"
+
+linux="/isolinux/rescue64 docache"
+initrd="/isolinux/initram.igz"
+
+# Language settings. Based on GRUB lang. Does not work for all distros.
+linux_extra="$langset"
+
+## arch based
+#linux_extra="${linux_extra} img_dev=/dev/disk/by-uuid/$rootuuid img_loop=$iso_path earlymodules=loop"
+
+## gentoo based
+#linux_extra="${linux_extra} isofrom=$iso_path"
+
+## ubuntu based, fedora, opensuse, rosa
+#linux_extra="${linux_extra} iso-scan/filename=$iso_path"
+
+## antiX based (the image must be on usb media)
+#linux_extra="${linux_extra} fromiso=$iso_path"
+
+## Grml Live Linux
+#linux_extra="${linux_extra} findiso=$iso_path"
+
+## sysrcd
+linux_extra="${linux_extra} isoloop=$iso_path"
+
+## MagOS Linux (UIRD)
+#linux_extra="${linux_extra} uird.from=${iso_path},/MagOS uird.force scantimeout=3"
+
+## TODO: SUSE based
+##linux_extra="${linux_extra} isofrom_device=/dev/disk/by-uuid/$rootuuid isofrom_system=$iso_path"
+
+## others?
+#linux_extra="${linux_extra} isoboot=$iso_path"
