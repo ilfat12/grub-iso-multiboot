@@ -19,8 +19,8 @@ linux_extra="$langset"
 ## ubuntu based, fedora, opensuse, rosa
 #linux_extra="${linux_extra} iso-scan/filename=$iso_path"
 
-## antiX based (the image must be on usb media)
-#linux_extra="${linux_extra} fromiso=$iso_path"
+## antiX based
+#linux_extra="${linux_extra} from=all fromiso=$iso_path"
 
 ## Grml Live Linux
 #linux_extra="${linux_extra} findiso=$iso_path"
